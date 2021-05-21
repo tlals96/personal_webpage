@@ -1,20 +1,20 @@
 import logo from './logo.svg';
 //import './App.css';
-import { Button, createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { AppBar, Button, createMuiTheme, ThemeProvider } from '@material-ui/core';
+import Dashboard from './dashboard/Dashboard'
 
 const theme = createMuiTheme({
-  props:{
-    MuiButton:{
-      color: 'primary',
-      variant: 'contained',
-    },
-  },
+  // props:{
+  //   MuiButton:{
+  //     color: 'primary',
+  //   },
+  // },
 });
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Button>Hello world</Button>
+      <Dashboard></Dashboard>
     </ThemeProvider>
   );
 }
